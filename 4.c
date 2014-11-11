@@ -1,4 +1,5 @@
 //знак целого числа
+//Миновская Настя
 #include <stdio.h>
 int main(void)
 {
