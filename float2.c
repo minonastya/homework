@@ -3,6 +3,7 @@
 #include <stdio.h>
 int main(void)
 {
+float a, b;
 int p, s, e, m;
 struct{
 int type;
@@ -12,7 +13,8 @@ float fval;
 } val;
 } data;
 
-scanf("%f", &data.val.fval);
+scanf("%f%f", &a, %b);
+data.val.fval = a / b;
 p = data.val.ival;
 s = (p >> 31) & 1;
 e = (p >> 23) & ((1 << 8) - 1);
