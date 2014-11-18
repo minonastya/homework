@@ -3,9 +3,10 @@
 #include <stdio.h>
 int main(void)
 {
-float val;
-int a, ival, s, e, m;
-scanf("%f", &val);
+float a, b, val;
+int ival, s, e, m;
+scanf("%f%f", &a, &b);
+val = a / b;
 ival = *((int*)((void*)&val));
 s = (ival >> 31) & 1;
 e = (ival >> 23) & ((1 << 8) - 1);
