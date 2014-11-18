@@ -5,7 +5,7 @@ int main(void)
 {
 int p, s, e, m, s1, e1, m1;
 union{
- float fval;
+ float fval, a, b;
  struct
   {
  unsigned int m: 23;
@@ -14,7 +14,8 @@ union{
   } bitfields;
 } data;
 
-scanf("%f", &data.fval);
+scanf("%f%f", &a, &b);
+data.fval = a / b;
 s1 = data.bitfields.s;
 e1 = data.bitfields.e;
 m1 = data.bitfields.m;
