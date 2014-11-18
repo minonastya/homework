@@ -3,9 +3,9 @@
 #include <stdio.h>
 int main(void)
 {
-int n, i, k;
+int n, k;
 scanf("%d", &n);
 k = (n >> 31) & 1;
-printf("%d\n",k | (n & 1) | (0 - k));
+printf("%d\n",k | !(!n) | (0 - k));
 return 0;
 }
